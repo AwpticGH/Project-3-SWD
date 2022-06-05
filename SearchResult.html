@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RFS_Airline - Airline Reservation Ticket by Group 2 of 2SE1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Group 2 of 2SE1 - Alfiansyah, Rafi Fajar Sulaiman and Wahyu Agung Utomo">
+        <meta name="charset" content="UTF-8">
+        <meta name="description" content="RFS-Airline is Dedicated To Reserve Your Flight">
+        <link rel="stylesheet" type="text/css" href="Main.css">
+        <link rel="stylesheet" type="text/css" href="gridding.css">
+        <script src="main.js">
+            // let flightInfo = flightInfo;
+            // function fillFlightInfo() {
+            //     fillFlightInfo(flightInfo);
+            // }
+
+            // fillFlightInfo();
+        </script>
+        <script>
+            let flightInfo = {
+                flightID : "1",
+                airlineName : "Garuda Indonesia",
+                timeOfDeparture : "9:00 AM",
+                timeOfFlight : "120 M",
+                timeOfArrival : "11 AM",
+                airportOfDeparture : "CGK",
+                airportOfArrival : "BDO",
+                cityOfDeparture : "Surabaya",
+                cityOfArrival : "Bandung"
+            }
+
+            const userInfo = {
+                ID,
+                email,
+                password,
+                name,
+                dateOfBirth,
+                gender,
+                title,
+                phoneNumber
+            }
+
+            function fillFlightInfo(flightInfo) {
+                document.getElementById("airline-name").innerHTML = flightInfo.airlineName;
+                document.getElementById("time-of-departure").innerHTML = flightInfo.timeOfDeparture;
+                document.getElementById("time-of-flight").innerHTML = flightInfo.timeOfFlight;
+                document.getElementById("time-of-arrival").innerHTML = flightInfo.timeOfArrival;
+                document.getElementById("airport-of-departure").innerHTML = flightInfo.airportOfDeparture;
+                document.getElementById("airport-of-arrival").innerHTML = flightInfo.airportOfArrival;
+                document.getElementById("city-of-departure").innerHTML = flightInfo.cityOfDeparture;
+                document.getElementById("city-of-arrival").innerHTML = flightInfo.cityOfArrival;
+            }
+
+            fillFlightInfo(flightInfo);
+        </script>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        
+        <!-- First Panel -->
+        <div class="row panel header">
+            <div class="col-6" id="col-panel">
+                <div class="row col-12" style="height: 60%; padding: 0;">
+                    <div class="col-4" id="header-from-to">
+                        <h1 id="city-of-departure">Jakarta</h1>
+                    </div>
+                    <div class="col-4" id="arrow" style="height: 100%;">
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <div class="col-4" id="header-from-to">
+                        <h1 id="city-of-arrival">Bandung</h1>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <p>20 May 2022 &nbsp||&nbsp 1 Passenger &nbsp||&nbsp Economy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="col-panel">
+                <button class="btn-panel" id="btn-header">Change Search</button>
+            </div>
+        </div>
+
+        <!-- Second Panel -->
+        <div class="row panel body" id="result-1" onclick="displayInfo1()"> <!-- result 1 -->
+            <div class="col-4" id="col-panel">
+                <h1 id="airline-name">Garuda Indonesia</h1>
+            </div>
+            <div class="col-1_66" id="col-panel" style="text-align: center;">
+                        <p id="time-of-departure">9:00 AM</p>
+                        <p id="airport-of-departure">CGK</p>               
+            </div>
+            <div class="col-1_66" id="col-panel" style="text-align: center;">               
+                    <p id="time-of-flight">120 M</p>                             
+                    <hr>                
+            </div>
+            <div class="col-1_66" id="col-panel" style="text-align: center">
+               <p id="time-of-arrival">10:30 AM</p>                     
+                <p id="airport-of-arrival">KNO</p>
+            </div>
+            <div class="col-3" id="col-panel">
+                <button class="btn-panel" id="btn-body" onclick="flightChose()">Choose</button>
+            </div>
+        </div>
+        <div class="panel-info" id="info-1" style="display: none;">
+        </div>
+
+        <!-- Third Panel -->
+        <div class="row panel body" id="result-2" onclick="displayInfo2()"> <!-- result 2 -->
+            <div class="col-4" id="col-panel">
+                <h1 id="airline-name">Garuda Indonesia</h1>
+            </div>
+            <div class="col-1_66" id="col-panel" style="text-align: center;">
+                        <p id="time-of-departure">9:00 AM</p>
+                        <p id="airport-of-departure">CGK</p>               
+            </div>
+            <div class="col-1_66" id="col-panel" style="text-align: center;">               
+                    <p id="time-of-flight">120 M</p>                             
+                    <hr>                
+            </div>
+            <div class="col-1_66" id="col-panel" style="text-align: center">
+               <p id="time-of-arrival">10:30 AM</p>                     
+                <p id="airport-of-arrival">KNO</p>
+            </div>
+            <div class="col-3" id="col-panel">
+                <button class="btn-panel" id="btn-body">Choose</button>
+            </div>
+        </div>
+        <div class="panel-info" id="info-2" style="display: none;">
+        </div>
+    </body>
+</html>
