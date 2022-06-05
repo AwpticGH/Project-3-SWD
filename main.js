@@ -2,23 +2,19 @@ function displayInfo() {
     var i = 0;
     var panelLength = 2;
 
-    for (i=1; i <= panelLength; i++) {
-        
+    for (i = 1; i <= panelLength; i++) {
+
     }
 
     if (document.getElementById("info-1").style.display == "none") {
         document.getElementById("info-1").style.display = "block";
-    }
-
-    else {
+    } else {
         document.getElementById("info-1").style.display = "none";
     }
 
     if (document.getElementById("info-2").style.display == "none") {
         document.getElementById("info-2").style.display = "block";
-    }
-
-    else {
+    } else {
         document.getElementById("info-2").style.display = "none";
     }
 }
@@ -34,31 +30,28 @@ function displayInfo1() {
     var i = 0;
     var panelLength = 2;
 
-    for (i=1; i <= panelLength; i++) {
-        
+    for (i = 1; i <= panelLength; i++) {
+
     }
 
     if (document.getElementById("info-1").style.display == "none") {
         document.getElementById("info-1").style.display = "block";
-    }
-
-    else {
+    } else {
         document.getElementById("info-1").style.display = "none";
     }
 }
+
 function displayInfo2() {
     var i = 0;
     var panelLength = 2;
 
-    for (i=1; i <= panelLength; i++) {
-        
+    for (i = 1; i <= panelLength; i++) {
+
     }
 
     if (document.getElementById("info-2").style.display == "none") {
         document.getElementById("info-2").style.display = "block";
-    }
-
-    else {
+    } else {
         document.getElementById("info-2").style.display = "none";
     }
 }
@@ -70,30 +63,19 @@ function changeSearch() {
 
 function flightChose() {
     document.getElementById("result-1").onclick = "";
-    alert("Hello")
-}
-
-let userInfo = {
-    ID,
-    email,
-    password,
-    name,
-    dateOfBirth,
-    gender,
-    title,
-    phoneNumber
+    fillFlightInfo(flightInfo);
 }
 
 let flightInfo = {
-    flightID : "1",
-    airlineName : "Garuda Indonesia",
-    timeOfDeparture : "9:00 AM",
-    timeOfFlight : "120 M",
-    timeOfArrival : "11 AM",
-    airportOfDeparture : "CGK",
-    airportOfArrival : "BDO",
-    cityOfDeparture : "Surabaya",
-    cityOfArrival : "Bandung"
+    flightID: "1",
+    airlineName: "Garuda Indonesia",
+    timeOfDeparture: "9:00 AM",
+    timeOfFlight: "120 M",
+    timeOfArrival: "11 AM",
+    airportOfDeparture: "CGK",
+    airportOfArrival: "BDO",
+    cityOfDeparture: "Surabaya",
+    cityOfArrival: "Bandung"
 }
 
 function fillFlightInfo(flightInfo) {
@@ -106,5 +88,3 @@ function fillFlightInfo(flightInfo) {
     document.getElementById("city-of-departure").innerHTML = flightInfo.cityOfDeparture;
     document.getElementById("city-of-arrival").innerHTML = flightInfo.cityOfArrival;
 }
-
-fillFlightInfo(flightInfo);
