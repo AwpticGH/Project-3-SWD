@@ -1,27 +1,32 @@
-// function displayInfo() {
-//     var i = 0;
-//     var panelLength = 2;
+function displayInfo() {
+    var i = 0;
+    var panelLength = 2;
 
-//     for (i=1; i <= panelLength; i++) {
+    for (i=1; i <= panelLength; i++) {
         
-//     }
+    }
 
-//     if (document.getElementById("info-1").style.display == "none") {
-//         document.getElementById("info-1").style.display = "block";
-//     }
+    if (document.getElementById("info-1").style.display == "none") {
+        document.getElementById("info-1").style.display = "block";
+    }
 
-//     else {
-//         document.getElementById("info-1").style.display = "none";
-//     }
+    else {
+        document.getElementById("info-1").style.display = "none";
+    }
 
-//     if (document.getElementById("info-2").style.display == "none") {
-//         document.getElementById("info-2").style.display = "block";
-//     }
+    if (document.getElementById("info-2").style.display == "none") {
+        document.getElementById("info-2").style.display = "block";
+    }
 
-//     else {
-//         document.getElementById("info-2").style.display = "none";
-//     }
-// }
+    else {
+        document.getElementById("info-2").style.display = "none";
+    }
+}
+
+var selectedPanel = document.getElementsByClassName("panel body");
+var panelInfo = document.getElementsByClassName("panel-info");
+
+// for ()
 
 //-----------------------
 // TEMPORARY
@@ -68,6 +73,17 @@ function flightChose() {
     alert("Hello")
 }
 
+let userInfo = {
+    ID,
+    email,
+    password,
+    name,
+    dateOfBirth,
+    gender,
+    title,
+    phoneNumber
+}
+
 let flightInfo = {
     flightID : "1",
     airlineName : "Garuda Indonesia",
@@ -78,17 +94,6 @@ let flightInfo = {
     airportOfArrival : "BDO",
     cityOfDeparture : "Surabaya",
     cityOfArrival : "Bandung"
-}
-
-const userInfo = {
-    ID,
-    email,
-    password,
-    name,
-    dateOfBirth,
-    gender,
-    title,
-    phoneNumber
 }
 
 function fillFlightInfo(flightInfo) {

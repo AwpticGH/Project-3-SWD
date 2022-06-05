@@ -17,41 +17,41 @@
             // fillFlightInfo();
         </script>
         <script>
-            let flightInfo = {
-                flightID : "1",
-                airlineName : "Garuda Indonesia",
-                timeOfDeparture : "9:00 AM",
-                timeOfFlight : "120 M",
-                timeOfArrival : "11 AM",
-                airportOfDeparture : "CGK",
-                airportOfArrival : "BDO",
-                cityOfDeparture : "Surabaya",
-                cityOfArrival : "Bandung"
-            }
+            // let flightInfo = {
+            //     flightID : "1",
+            //     airlineName : "Garuda Indonesia",
+            //     timeOfDeparture : "9:00 AM",
+            //     timeOfFlight : "120 M",
+            //     timeOfArrival : "11 AM",
+            //     airportOfDeparture : "CGK",
+            //     airportOfArrival : "BDO",
+            //     cityOfDeparture : "Surabaya",
+            //     cityOfArrival : "Bandung"
+            // }
 
-            const userInfo = {
-                ID,
-                email,
-                password,
-                name,
-                dateOfBirth,
-                gender,
-                title,
-                phoneNumber
-            }
+            // const userInfo = {
+            //     ID,
+            //     email,
+            //     password,
+            //     name,
+            //     dateOfBirth,
+            //     gender,
+            //     title,
+            //     phoneNumber
+            // }
 
-            function fillFlightInfo(flightInfo) {
-                document.getElementById("airline-name").innerHTML = flightInfo.airlineName;
-                document.getElementById("time-of-departure").innerHTML = flightInfo.timeOfDeparture;
-                document.getElementById("time-of-flight").innerHTML = flightInfo.timeOfFlight;
-                document.getElementById("time-of-arrival").innerHTML = flightInfo.timeOfArrival;
-                document.getElementById("airport-of-departure").innerHTML = flightInfo.airportOfDeparture;
-                document.getElementById("airport-of-arrival").innerHTML = flightInfo.airportOfArrival;
-                document.getElementById("city-of-departure").innerHTML = flightInfo.cityOfDeparture;
-                document.getElementById("city-of-arrival").innerHTML = flightInfo.cityOfArrival;
-            }
+            // function fillFlightInfo(flightInfo) {
+            //     document.getElementById("airline-name").innerHTML = flightInfo.airlineName;
+            //     document.getElementById("time-of-departure").innerHTML = flightInfo.timeOfDeparture;
+            //     document.getElementById("time-of-flight").innerHTML = flightInfo.timeOfFlight;
+            //     document.getElementById("time-of-arrival").innerHTML = flightInfo.timeOfArrival;
+            //     document.getElementById("airport-of-departure").innerHTML = flightInfo.airportOfDeparture;
+            //     document.getElementById("airport-of-arrival").innerHTML = flightInfo.airportOfArrival;
+            //     document.getElementById("city-of-departure").innerHTML = flightInfo.cityOfDeparture;
+            //     document.getElementById("city-of-arrival").innerHTML = flightInfo.cityOfArrival;
+            // }
 
-            fillFlightInfo(flightInfo);
+            // fillFlightInfo(flightInfo);
         </script>
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -62,13 +62,13 @@
             <div class="col-6" id="col-panel">
                 <div class="row col-12" style="height: 60%; padding: 0;">
                     <div class="col-4" id="header-from-to">
-                        <h1 id="city-of-departure">Jakarta</h1>
+                        <h1 id="city-of-departure"></h1>  <!-- 1 -->
                     </div>
                     <div class="col-4" id="arrow" style="height: 100%;">
                         <i class='bx bx-right-arrow-alt'></i>
                     </div>
                     <div class="col-4" id="header-from-to">
-                        <h1 id="city-of-arrival">Bandung</h1>
+                        <h1 id="city-of-arrival"></h1> <!-- 2 -->
                     </div>
                 </div>
                 
@@ -86,19 +86,19 @@
         <!-- Second Panel -->
         <div class="row panel body" id="result-1" onclick="displayInfo1()"> <!-- result 1 -->
             <div class="col-4" id="col-panel">
-                <h1 id="airline-name">Garuda Indonesia</h1>
+                <h1 id="airline-name"></h1> <!-- 3 -->
             </div>
             <div class="col-1_66" id="col-panel" style="text-align: center;">
-                        <p id="time-of-departure">9:00 AM</p>
-                        <p id="airport-of-departure">CGK</p>               
+                        <p id="time-of-departure"></p> <!-- 4 -->
+                        <p id="airport-of-departure"></p>  <!-- 5 -->             
             </div>
             <div class="col-1_66" id="col-panel" style="text-align: center;">               
-                    <p id="time-of-flight">120 M</p>                             
+                    <p id="time-of-flight"></p> <!-- 6 -->                             
                     <hr>                
             </div>
             <div class="col-1_66" id="col-panel" style="text-align: center">
-               <p id="time-of-arrival">10:30 AM</p>                     
-                <p id="airport-of-arrival">KNO</p>
+               <p id="time-of-arrival"></p> <!-- 7 -->                    
+                <p id="airport-of-arrival"></p> <!-- 8 -->
             </div>
             <div class="col-3" id="col-panel">
                 <button class="btn-panel" id="btn-body" onclick="flightChose()">Choose</button>
@@ -108,7 +108,7 @@
         </div>
 
         <!-- Third Panel -->
-        <div class="row panel body" id="result-2" onclick="displayInfo2()"> <!-- result 2 -->
+        <!-- <div class="row panel body" id="result-2" onclick="displayInfo2()">
             <div class="col-4" id="col-panel">
                 <h1 id="airline-name">Garuda Indonesia</h1>
             </div>
@@ -129,6 +129,6 @@
             </div>
         </div>
         <div class="panel-info" id="info-2" style="display: none;">
-        </div>
+        </div> -->
     </body>
 </html>
