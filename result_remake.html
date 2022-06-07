@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RFS_Airline - Airline Reservation Ticket by Group 2 of 2SE1</title>
+        <title>G2 Airline - Airline Reservation Ticket by Group 2 of 2SE1</title>
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <meta name="author" content="Group 2 of 2SE1 - Alfiansyah, Rafi Fajar Sulaiman and Wahyu Agung Utomo">
         <meta name="charset" content="UTF-8">
         <meta name="description" content="RFS-Airline is Dedicated To Reserve Your Flight">
         <link rel="stylesheet" type="text/css" href="result_remake.css">
         <link rel="stylesheet" type="text/css" href="gridding.css">
-        <script src="main.js">
-        </script>
+        <script src="main.js"></script>
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="Images/Icons/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="Images/Icons/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <!-- navbar -->
         
 
         <!-- panel - searched -->
-        <div class="panel searched">
+        <div class="panel searched shadowed">
             <div class="col-6">
-                <div class="row">
+                <div class="row content">
                     <div class="col-4 content">
                         <h1>Jakarta</h1>
                     </div>
@@ -30,22 +31,210 @@
                         <h1>Bandung</h1>
                     </div>
                 </div>
-                <br>
-                <br>
-                <div class="row">
+                <div class="row content">
                     <div class="col-12 content">
                         <p>20 May 2022 &nbsp||&nbsp 1 Passenger &nbsp||&nbsp First Class</p>
                     </div>
                 </div>
             </div>
             <div class="col-6 content">
-                <button class="btn-panel shadowed">Change Search</button>
+                <button class="btn-panel-searched shadowed">Change Search</button>
             </div>
         </div>
 
         <!-- panel - result - 1 -->
-        <div class="panel result">
+        <div class="panel result shadowed">
+            <div class="col-4">
+                <div class="col-12 content">
+                    <h1><img class="result-airline-logo" src="Images/garuda_indonesia.png"> Garuda Indonesia</h1>
+                </div>
+                <div class="col-12 content"></div>
+                <div class="col-12 content"></div>
+                <div class="col-12">
+                    <div class="col-6 content text-center">
+                        <a href="#info-1">Flight Info</a>
+                    </div>
+                    <div class="col-6 content text-center">
+                        <a href="#price-1">Fare Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="col-8">
+                    <div class="col-4 content text-center">
+                        <p class="result-text-time">9:00 AM</p>
+                        <p>CGK</p>
+                    </div>
+                    <div class="col-4 content text-center">
+                        <p class="result-text-time-duration">120 M</p>
+                        <hr>
+                        <!-- <div>
+                            <i class='bx bx-chevron-left'></i><hr class="result-text-time-separator"><i class='bx bx-chevron-right' ></i>
+                        </div> -->
+                    </div>
+                    <div class="col-4 content text-center">
+                        <p class="result-text-time">11.00 AM</p>
+                        <p>BDO</p>
+                    </div>
+                </div>
+                <div class="col-4 content">
+                    <button class="btn-panel-result shadowed">Choose</button>
+                </div>
+            </div>
+        </div>
+        <!-- panel - result - 1 extension -->
+        <div class="panel result-extended" id="info-1">
+            <!-- below is blank  -->
+            <div class="row">
+                <div class="col-12 content"></div>
+            </div>
+            <!-- above is blank -->
+            <div class="row">
+                <div class="col-2 content text-center info-vr" style="padding-top: 0; padding-bottom: 0;">
+                    <p class="no-margin-bottom no-margin-top">9.00AM</p>
+                    <p class="text-gray no-margin-top">20 May</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p><i class='bx bx-right-arrow-alt'></i> 120 M</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="no-margin-bottom">11:00 AM</p>
+                    <p class="text-gray no-margin-top no-margin-bottom">20 May</p>
+                </div>
+                <div class="col-10 content" style="padding-top: 0; padding-bottom: 0;">
+                    <p class="no-margin-bottom no-margin-top">Jakarta (CGK)</p>
+                    <p class="no-margin-top text-gray">Soekarno Hatta International Airport</p>
+                    <div class="row">
+                        <div class="col-10 panel info-panel">
+                            <div class="col-4 content">
+                                <strong><img src="Images/garuda_indonesia.png" alt="Logo" class="info-airline-logo"> Garuda Indonesia</strong>
+                                <p>GA-128 - <span class="info-text-seat-class">First Class</span></p>
+                            </div>
+                            <div class="col-4 content">
+                                <p class="text-gray no-margin-top">Baggage 20 kg</p>
+                                <p class="text-gray">Cabin Baggage 7 kg</p>
+                            </div>
+                            <div class="col-4 content">
+                                <p class="no-margin-top"><span class="text-bold">Aircraft</span> Boeing 737</p>
+                                <p><span class="text-bold">Seat layout</span> 3-3</p>
+                                <p><span class="text-bold">Seat pitch</span> 29 inches (standard)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="no-margin-bottom">Bandung (BDO)</p>
+                    <p class="no-margin-top text-gray">Husein Sastranegara International Airport</p>
+                </div>
+            </div>
+        </div>
+        <!-- price -->
+        <div class="panel result-extended" id="price-1">
+            <div class="col-6 content">
+                <h4 class="price-text-title">Conditions</h4>
+                <p class="price-text-title"><img src="Images/garuda_indonesia.png" alt="Logo" class="info-airline-logo"> Garuda Indonesia</p>
+                <p>Jakarta <i class='bx bx-right-arrow-alt'></i> Bandung</p>
+                <p class="text-gray">First Class</p>
+                <hr>
+            </div>
+            <div class="col-6 content">
+
+            </div>
+        </div>
+            
+        <!-- panel - result - 2 -->
+        <div class="panel result shadowed">
+            <div class="col-4">
+                <div class="col-12 content">
+                    <h1><img class="result-airline-logo" src="Images/garuda_indonesia.png">Garuda Indonesia</h1>
+                </div>
+                <div class="col-12 content"></div>
+                <div class="col-12 content"></div>
+                <div class="col-12">
+                    <div class="col-6 content text-center">
+                        <a href="#info-1">Flight Info</a>
+                    </div>
+                    <div class="col-6 content text-center">
+                        <a href="#price-1">Fare Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="col-8">
+                    <div class="col-4 content text-center">
+                        <p class="result-text-time">9:00 AM</p>
+                        <p>CGK</p>
+                    </div>
+                    <div class="col-4 content text-center">
+                        <p class="result-text-time-duration">120 M</p>
+                        <hr>
+                        <!-- <div>
+                            <i class='bx bx-chevron-left'></i><hr class="result-text-time-separator"><i class='bx bx-chevron-right' ></i>
+                        </div> -->
+                    </div>
+                    <div class="col-4 content text-center">
+                        <p class="result-text-time">11.00 AM</p>
+                        <p>BDO</p>
+                    </div>
+                </div>
+                <div class="col-4 content">
+                    <button class="btn-panel-result shadowed">Choose</button>
+                </div>
+            </div>
+        </div>
+        <!-- panel - result - 2 extension -->
+        <!-- info -->
+        <div class="panel result-extended" id="info-2">
+            <!-- below is blank  -->
+            <div class="row">
+                <div class="col-12 content"></div>
+            </div>
+            <!-- above is blank -->
+            <div class="row">
+                <div class="col-2 content text-center info-vr" style="padding-top: 0; padding-bottom: 0;">
+                    <p class="no-margin-bottom no-margin-top">9.00AM</p>
+                    <p class="text-gray no-margin-top">20 May</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p><i class='bx bx-right-arrow-alt'></i> 120 M</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="no-margin-bottom">11:00 AM</p>
+                    <p class="text-gray no-margin-top no-margin-bottom">20 May</p>
+                </div>
+                <div class="col-10 content" style="padding-top: 0; padding-bottom: 0;">
+                    <p class="no-margin-bottom no-margin-top">Jakarta (CGK)</p>
+                    <p class="no-margin-top text-gray">Soekarno Hatta International Airport</p>
+                    <div class="row">
+                        <div class="col-10 panel info-panel">
+                            <div class="col-4 content">
+                                <strong><img src="Images/garuda_indonesia.png" alt="Logo" class="info-airline-logo"> Garuda Indonesia</strong>
+                                <p>GA-128 - <span class="info-text-seat-class">First Class</span></p>
+                            </div>
+                            <div class="col-4 content">
+                                <p class="text-gray no-margin-top">Baggage 20 kg</p>
+                                <p class="text-gray">Cabin Baggage 7 kg</p>
+                            </div>
+                            <div class="col-4 content">
+                                <p class="no-margin-top"><span class="text-bold">Aircraft</span> Boeing 737</p>
+                                <p><span class="text-bold">Seat layout</span> 3-3</p>
+                                <p><span class="text-bold">Seat pitch</span> 29 inches (standard)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="no-margin-bottom">Bandung (BDO)</p>
+                    <p class="no-margin-top text-gray">Husein Sastranegara International Airport</p>
+                </div>
+            </div>
+        </div>
+        <!-- price -->
+        <div class="panel result-extended" id="price-2">
 
         </div>
     </body>
+    <footer>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati ex voluptatem assumenda! Labore amet architecto ex voluptas itaque ab, omnis maxime, rerum ratione dolorem odio quo laudantium quibusdam laborum?</p>
+    </footer>
 </html>

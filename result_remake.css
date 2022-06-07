@@ -1,9 +1,8 @@
 .panel {
     border-radius: 10px;
-    width: 70rem;
-    height: 15rem;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .shadowed {
@@ -13,6 +12,9 @@
 .searched {
     background-color: #5584AC;
     color: white;
+    width: 70rem;
+    height: 15rem;
+    margin: auto;
     margin-top: 7rem;
 }
 
@@ -22,6 +24,9 @@
 
 .result {
     background-color: white;
+    width: 70rem;
+    height: 15rem;
+    margin: auto;
     margin-top: 3rem;
 }
 
@@ -29,15 +34,57 @@
     opacity: 70%;
 }
 
-.btn-panel {
+.result-extended {
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+}
+
+#info-1 {
+    width: 70rem;
+    height: 20rem;
+    margin: auto;
+    margin-top: 0;
+}
+
+#price-1 {
+    width: 70rem;
+    height: 30rem;
+    margin: auto;
+    margin-top: 0;
+}
+
+#info-2 {
+    width: 70rem;
+    height: 20rem;
+    margin: auto;
+    margin-top: 0;
+}
+
+#price-2 {
+    width: 70rem;
+    height: 30rem;
+    margin: auto;
+    margin-top: 0;
+}
+
+.btn-panel-searched {
     float: right;
     background-color: lightgray;
     border: 1.5px solid black;
     border-radius: 5px;
     margin-top: 5rem;
-    margin-right: 0.5rem;
     height: 3rem;
     width: 12rem;
+}
+
+.btn-panel-result {
+    float: right;
+    background-color: lightgray;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-top: 5rem;
+    height: 3rem;
+    width: 100%;
 }
 
 .arrow {
@@ -49,6 +96,91 @@
     text-align: center;
 }
 
+.text-gray {
+    color: lightgray;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.result-airline-logo {
+    width: calc(300px / 4.6875);
+    height: calc(141px / 4.6875);
+}
+
+.result-text-time {
+    margin-top: 5rem;
+}
+
+.result-text-time-duration {
+    margin-top: 4rem;
+}
+
+.result-text-time-separator {
+    width: calc(100% - 10px);
+}
+
+.info-panel {
+    border: 1px solid gray;
+    height: 147px;
+}
+
+.info-vr {
+    border-right: 2px solid blue;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.info-airline-logo {
+    width: calc(300px / 9.375);
+    height: calc(141px / 9.375);
+}
+
+.info-text-seat-class {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.price-text-title {
+    margin-bottom: 1.5rem;
+}
+
 body {
     background-color: #95D1CC;
+}
+
+footer {
+    background-color: #1c1c1b;
+    color: #dedede;
+
+    margin: auto;
+    margin-top: 5rem;
+
+    max-width: 100%;
+    height: 20rem;
+
+    border-radius: 5px 5px 0 0;
+}
+
+br {
+    display: block;
+    content: "";
+    height: 1rem;
 }

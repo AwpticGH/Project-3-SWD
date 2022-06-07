@@ -4,7 +4,7 @@
 
 [class*="col-"] {
     float: left;
-    border: 3px solid violet;
+    /* border: 3px solid violet; */
 }
 
 .col-padding {
@@ -12,7 +12,7 @@
 }
 
 .content {
-    padding: 15px;
+    padding: 1rem;
 }
 
 .row::after {
