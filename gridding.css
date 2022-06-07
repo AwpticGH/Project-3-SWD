@@ -4,44 +4,34 @@
 
 [class*="col-"] {
     float: left;
+    border: 3px solid violet;
+}
+
+.col-padding {
     padding: 15px;
-    /* border: 3px solid violet; */
-}
-
-.menu {
-    float: left;
-    margin: auto;
-    padding: 10px;
-    background-color: wheat;
-    color: black;
-}
-
-.menu a {
-    color: black;
 }
 
 .content {
-    float: left;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.title {
-    text-align: center;
-    background-color: indigo;
-    border: 1px solid indigo;
-    color: whitesmoke;
-    margin-bottom: 10px;
+    padding: 15px;
 }
 
 .row::after {
     content: "";
     clear: both;
     display: table;
+    /* border: 3px solid green; */
 }
 
 .col-1 {
     width: 8.33%;
+}
+
+.col-1_2 {
+    width: 10%;
+}
+
+.col-1_5 {
+    width: 12.5%;
 }
 
 .col-1_66 {
@@ -56,8 +46,16 @@
     width: 20%;
 }
 
+.col-2_5 {
+    width: 20.833%;
+}
+
 .col-3 {
     width: 25%;
+}
+
+.col-3_5 {
+    width: 29.166%;
 }
 
 .col-4 {
@@ -84,8 +82,16 @@
     width: 75%;
 }
 
+.col-9_5 {
+    width: 79.166%;
+}
+
 .col-10 {
     width: 83.33%;
+}
+
+.col-10_5 {
+    width: 87.5%;
 }
 
 .col-11 {

@@ -1,0 +1,54 @@
+.panel {
+    border-radius: 10px;
+    width: 70rem;
+    height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shadowed {
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.searched {
+    background-color: #5584AC;
+    color: white;
+    margin-top: 7rem;
+}
+
+.searched-text {
+    padding: 15px;
+}
+
+.result {
+    background-color: white;
+    margin-top: 3rem;
+}
+
+.result:hover {
+    opacity: 70%;
+}
+
+.btn-panel {
+    float: right;
+    background-color: lightgray;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-top: 5rem;
+    margin-right: 0.5rem;
+    height: 3rem;
+    width: 12rem;
+}
+
+.arrow {
+    font-size: 2.5rem;
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    background-color: #95D1CC;
+}
