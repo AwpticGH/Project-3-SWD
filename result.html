@@ -1,212 +1,261 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>RFS_Airline - Airline Reservation Ticket by Group 2 of 2SE1</title>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-        <meta name="author" content="Group 2 of 2SE1 - Alfiansyah, Rafi Fajar Sulaiman and Wahyu Agung Utomo">
-        <meta name="charset" content="UTF-8">
-        <meta name="description" content="RFS-Airline is Dedicated To Reserve Your Flight">
-        <link rel="stylesheet" type="text/css" href="result.css">
-        <link rel="stylesheet" type="text/css" href="gridding.css">
-        <script src="main.js">
-        </script>
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-        
-        <!-- First Panel -->
-        <div class="row panel header">
-            <div class="col-6" id="col-panel">
-                <div class="row col-12" style="height: 60%; padding: 0;">
-                    <div class="col-4 col-padding" id="header-from-to">
-                        <h1 class="city-of-departure"></h1>  <!-- 1 -->
-                    </div>
-                    <div class="col-4 col-padding" id="arrow" style="height: 100%;">
-                        <i class='bx bx-right-arrow-alt'></i>
-                    </div>
-                    <div class="col-4 col-padding" id="header-from-to">
-                        <h1 class="city-of-arrival"></h1> <!-- 2 -->
-                    </div>
+
+<head>
+    <title>G2 Airline - Airline Reservation Ticket by Group 2 of 2SE1</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="author" content="Group 2 of 2SE1 - Alfiansyah, Rafi Fajar Sulaiman and Wahyu Agung Utomo">
+    <meta name="charset" content="UTF-8">
+    <meta name="description" content="RFS-Airline is Dedicated To Reserve Your Flight">
+    <link rel="stylesheet" href="cssnavbar.css">
+    <link rel="stylesheet" type="text/css" href="result.css">
+    <link rel="stylesheet" type="text/css" href="gridding.css">
+    <script src="main.js">
+    </script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- navbar-->
+
+    <div class="wrapper">
+        <nav>
+            <div class="container-flex ">
+                <div class="brand">
+                    <a href=" ">G2 Airline</a>
                 </div>
-                
-                <div class="row">
-                    <div class="col-12 col-padding">
-                        <p>20 May 2022 &nbsp||&nbsp 1 Passenger &nbsp||&nbsp <span class="seat-class">Economy</span></p>
-                    </div>
+                <div class="burger ">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="bg-sidebar"></div>
+                <ul class="sidebar">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#login">Log In</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <script src="navbar.js"></script>
+
+    <!-- First Panel -->
+    <div class="row panel header">
+        <div class="col-6" id="col-panel">
+            <div class="row col-12" style="height: 60%; padding: 0;">
+                <div class="col-4 col-padding" id="header-from-to">
+                    <h1 class="city-of-departure"></h1>
+                    <!-- 1 -->
+                </div>
+                <div class="col-4 col-padding" id="arrow" style="height: 100%;">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+                <div class="col-4 col-padding" id="header-from-to">
+                    <h1 class="city-of-arrival"></h1>
+                    <!-- 2 -->
                 </div>
             </div>
-            <div class="col-6" id="col-panel">
-                <button class="btn-panel" id="btn-header">Change Search</button>
+
+            <div class="row">
+                <div class="col-12 col-padding">
+                    <p>20 May 2022 &nbsp||&nbsp 1 Passenger &nbsp||&nbsp <span class="seat-class">Economy</span></p>
+                </div>
             </div>
         </div>
+        <div class="col-6" id="col-panel">
+            <button class="btn-panel" id="btn-header">Change Search</button>
+        </div>
+    </div>
 
-        <!-- Second Panel -->
-        <div class="row panel body" id="result-1" onclick="displayInfo1()"> <!-- result 1 -->
-            <div class="col-4" id="col-panel" style="padding-top: 5rem; padding-left: 3rem;">
-                <h1 class="airline-name-1"></h1> <!-- 3 -->
+    <!-- Second Panel -->
+    <div class="row panel body" id="result-1" onclick="displayInfo1()">
+        <!-- result 1 -->
+        <div class="col-4" id="col-panel" style="padding-top: 5rem; padding-left: 3rem;">
+            <h1 class="airline-name-1"></h1>
+            <!-- 3 -->
+        </div>
+        <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4.5rem;">
+            <p class="time-of-departure-1">11 AM</p>
+            <!-- 4 -->
+            <p class="airport-of-departure-code">CGK</p>
+            <!-- 5 -->
+        </div>
+        <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4rem;">
+            <p class="time-of-flight">120 M</p>
+            <!-- 6 -->
+            <hr>
+        </div>
+        <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4.5rem;">
+            <p class="time-of-arrival-1">1 PM</p>
+            <!-- 7 -->
+            <p class="airport-of-arrival-code">BDO</p>
+            <!-- 8 -->
+        </div>
+        <div class="col-3 col-btn" id="col-panel">
+            <button class="btn-panel" id="btn-body" onclick="flightChose()">Choose</button>
+        </div>
+    </div>
+    <!-- Result-1 Info Panel -->
+    <div class="panel-info" id="info-1" style="display: none;">
+        <div class="row col-12" style="height: 20%; padding: 0;">
+            <div class="col-1_5 col-padding" style="height:100%; text-align: center;">
+                <br>
+                <p class="time-of-departure-1"></p>
             </div>
-            <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4.5rem;">
-                        <p class="time-of-departure-1">11 AM</p> <!-- 4 -->
-                        <p class="airport-of-departure-code">CGK</p>  <!-- 5 -->             
-            </div>
-            <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4rem;">               
-                    <p class="time-of-flight">120 M</p> <!-- 6 -->                             
-                    <hr>                
-            </div>
-            <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4.5rem;">
-               <p class="time-of-arrival-1">1 PM</p> <!-- 7 -->                    
-                <p class="airport-of-arrival-code">BDO</p> <!-- 8 -->
-            </div>
-            <div class="col-3 col-btn" id="col-panel">
-                <button class="btn-panel" id="btn-body" onclick="flightChose()">Choose</button>
+            <div class="col-10_5 col-padding" style="height: 100%;">
+                <br>
+                <p><span class="city-of-departure"></span> (<span class="airport-of-departure"></span>)</p>
             </div>
         </div>
-        <!-- Result-1 Info Panel -->
-        <div class="panel-info" id="info-1" style="display: none;">
-            <div class="row col-12" style="height: 20%; padding: 0;">
-                <div class="col-1_5 col-padding" style="height:100%; text-align: center;">
-                    <br>
-                    <p class="time-of-departure-1"></p>
-                </div>
-                <div class="col-10_5 col-padding" style="height: 100%;">
-                    <br>
-                    <p><span class="city-of-departure"></span> (<span class="airport-of-departure"></span>)</p>
-                </div>
+        <div class="row col-12" style="height: 80%; padding: 0;">
+            <div class="col-1_5" style="height: 80%; padding: 0; text-align: center; border-right: 2px solid blue;">
+                <p style="color: gray; margin-top: 7px;">20 May</p>
+                <br>
+                <br>
+                <p><i class='bx bx-right-arrow-alt'></i> <span class="time-of-flight">120 M</span></p>
+                <br>
+                <br>
+                <p class="time-of-arrival-1">11:00 AM</p>
+                <p style="color: gray; margin-top: -1rem;">20 May</p>
             </div>
-            <div class="row col-12" style="height: 80%; padding: 0;">
-                <div class="col-1_5" style="height: 80%; padding: 0; text-align: center; border-right: 2px solid blue;">
-                    <p style="color: gray; margin-top: 7px;">20 May</p>
-                    <br>
-                    <br>
-                    <p><i class='bx bx-right-arrow-alt'></i> <span class="time-of-flight">120 M</span></p>
-                    <br>
-                    <br>
-                    <p class="time-of-arrival-1">11:00 AM</p>
-                    <p style="color: gray; margin-top: -1rem;">20 May</p>
-                </div>
-                <div class="col-10_5 col-padding" style="height: 100%; padding-top: 0;">
-                    <p style="color: gray; margin-top: 7px;" class="airport-of-departure-name"></p>
+            <div class="col-10_5 col-padding" style="height: 100%; padding-top: 0;">
+                <p style="color: gray; margin-top: 7px;" class="airport-of-departure-name"></p>
 
-                    <div class="col-9_5" style="height: 50%; border: 1px solid gray; border-radius: 10px; padding: 0;">
-                        <div class="col-4 col-padding" style="height: 100%;">
-                            <strong class="flight-info-text airline-name-1"></strong>
-                            <p class="flight-info-text"><span class="airline-code-1">GA</span>-<span class="route-code">127</span> -  <span class="seat-class" style="font-style: italic; font-weight: bold;">Economy</span></p>
-                        </div>
-                        <div class="col-4 col-padding" style="height: 100%;">
-                            <p class="flight-info-text" style="color: gray; margin-top: 0;"><!-- icon --> Baggage 20 kg</p>
-                            <p class="flight-info-text" style="color: gray;">Cabin Baggage 7 kg</p>
-                        </div>
-                        <div class="col-4 col-padding" style="height: 100%;">
-                            <p class="flight-info-text" style="margin-top: 0;"><span style="font-weight: bold;">Aircraft</span> Boeing 737</p>
-                            <p class="flight-info-text"><span style="font-weight: bold;">Seat layout</span> 3-3</p>
-                            <p class="flight-info-text"><span style="font-weight: bold;">Seat pitch</span> 29 inches (standard)</p>
-                        </div>
+                <div class="col-9_5" style="height: 50%; border: 1px solid gray; border-radius: 10px; padding: 0;">
+                    <div class="col-4 col-padding" style="height: 100%;">
+                        <strong class="flight-info-text airline-name-1"></strong>
+                        <p class="flight-info-text"><span class="airline-code-1">GA</span>-<span class="route-code">127</span> - <span class="seat-class" style="font-style: italic; font-weight: bold;">Economy</span></p>
                     </div>
-
-                    <div class="col-2_5" style="height: 50%; "></div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    
-                    <p style="margin-top: 13px;"><p><span class="city-of-arrival"></span> (<span class="airport-of-arrival"></span>)</p></p>
-                    <p class="airport-of-arrival-name" style="color: gray; margin-top: -1rem;"></p>
-                </div>
-            </div>
-            <script>
-                fillPlaneInfo(1, planeInfo1);
-            </script>
-        </div>
-
-        <!-- Third Panel -->
-        <div class="row panel body" id="result-2" onclick="displayInfo2()">
-            <div class="col-4" id="col-panel" style="padding-top: 5rem; padding-left: 3rem;">
-                <h1 class="airline-name-2"></h1>
-            </div>
-            <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4.5rem;">
-                        <p class="time-of-departure-2"></p>
-                        <p class="airport-of-departure"></p>               
-            </div>
-            <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4rem;">               
-                <p class="time-of-flight"></p>                             
-                <hr>                
-            </div>
-            <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4.5rem;">
-               <p class="time-of-arrival-2"></p>                     
-                <p class="airport-of-arrival"></p>
-            </div>
-            <div class="col-3 col-btn" id="col-panel">
-                <button class="btn-panel" id="btn-body">Choose</button>
-            </div>
-        </div>
-        <!-- result-2 info panel -->
-        <div class="panel-info" id="info-2" style="display: none;">
-            <div class="row col-12" style="height: 20%; padding: 0;">
-                <div class="col-1_5 col-padding" style="height:100%; text-align: center;">
-                    <br>
-                    <p class="time-of-departure-2"></p>
-                </div>
-                <div class="col-10_5 col-padding" style="height:100%;">
-                    <br>
-                    <p><span class="city-of-departure"></span> (<span class="airport-of-departure"></span>)</p>
-                </div>
-            </div>
-            
-            <div class="row col-12" style="height: 80%; padding: 0;">
-                <div class="col-1_5" style="height: 80%; padding: 0; text-align: center; border-right: 2px solid blue;">
-                    <p style="color: gray; margin-top: 7px;">20 May</p>
-                    <br>
-                    <br>
-                    <p><i class='bx bx-right-arrow-alt'></i> <span class="time-of-flight">120 M</span></p>
-                    <br>
-                    <br>
-                    <p class="time-of-arrival-2">11:00 AM</p>
-                    <p style="color: gray; margin-top: -1rem;">20 May</p>
-                </div>
-                <div class="col-10_5 col-padding" style="height: 100%; padding-top: 0;">
-                    <p style="color: gray; margin-top: 7px;" class="airport-of-departure-name"></p>
-
-                    <div class="col-9_5" style="height: 50%; border: 1px solid gray; border-radius: 10px; padding: 0;">
-                        <div class="col-4 col-padding" style="height: 100%;">
-                            <strong class="flight-info-text airline-name-2"></strong>
-                            <p class="flight-info-text"><span class="airline-code-2"></span>-<span class="route-code">127</span> -  <span class="seat-class" style="font-style: italic; font-weight: bold;">Economy</span></p>
-                        </div>
-                        <div class="col-4 col-padding" style="height: 100%;">
-                            <p class="flight-info-text" style="color: gray; margin-top: 0;"><!-- icon --> Baggage 20 kg</p>
-                            <p class="flight-info-text" style="color: gray;">Cabin Baggage 7 kg</p>
-                        </div>
-                        <div class="col-4 col-padding" style="height: 100%;">
-                            <p class="flight-info-text" style="margin-top: 0;"><span style="font-weight: bold;">Aircraft</span> Boeing 737</p>
-                            <p class="flight-info-text"><span style="font-weight: bold;">Seat layout</span> 3-3</p>
-                            <p class="flight-info-text"><span style="font-weight: bold;">Seat pitch</span> 29 inches (standard)</p>
-                        </div>
+                    <div class="col-4 col-padding" style="height: 100%;">
+                        <p class="flight-info-text" style="color: gray; margin-top: 0;">
+                            <!-- icon -->Baggage 20 kg</p>
+                        <p class="flight-info-text" style="color: gray;">Cabin Baggage 7 kg</p>
                     </div>
-
-                    <div class="col-2_5" style="height: 50%; "></div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    
-                    <p style="margin-top: 13px;"><p><span class="city-of-arrival"></span> (<span class="airport-of-arrival"></span>)</p></p>
-                    <p class="airport-of-arrival-name" style="color: gray; margin-top: -1rem;"></p>
+                    <div class="col-4 col-padding" style="height: 100%;">
+                        <p class="flight-info-text" style="margin-top: 0;"><span style="font-weight: bold;">Aircraft</span> Boeing 737</p>
+                        <p class="flight-info-text"><span style="font-weight: bold;">Seat layout</span> 3-3</p>
+                        <p class="flight-info-text"><span style="font-weight: bold;">Seat pitch</span> 29 inches (standard)</p>
+                    </div>
                 </div>
+
+                <div class="col-2_5" style="height: 50%; "></div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <p style="margin-top: 13px;">
+                    <p><span class="city-of-arrival"></span> (<span class="airport-of-arrival"></span>)</p>
+                </p>
+                <p class="airport-of-arrival-name" style="color: gray; margin-top: -1rem;"></p>
             </div>
-            <script>
-                fillPlaneInfo(2, planeInfo2);
-            </script>
         </div>
         <script>
-            fillFlightInfo();
+            fillPlaneInfo(1, planeInfo1);
         </script>
-    </body>
+    </div>
+
+    <!-- Third Panel -->
+    <div class="row panel body" id="result-2" onclick="displayInfo2()">
+        <div class="col-4" id="col-panel" style="padding-top: 5rem; padding-left: 3rem;">
+            <h1 class="airline-name-2"></h1>
+        </div>
+        <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4.5rem;">
+            <p class="time-of-departure-2"></p>
+            <p class="airport-of-departure"></p>
+        </div>
+        <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4rem;">
+            <p class="time-of-flight"></p>
+            <hr>
+        </div>
+        <div class="col-1_66" id="col-panel" style="text-align: center; padding-top: 4.5rem;">
+            <p class="time-of-arrival-2"></p>
+            <p class="airport-of-arrival"></p>
+        </div>
+        <div class="col-3 col-btn" id="col-panel">
+            <button class="btn-panel" id="btn-body">Choose</button>
+        </div>
+    </div>
+    <!-- result-2 info panel -->
+    <div class="panel-info" id="info-2" style="display: none;">
+        <div class="row col-12" style="height: 20%; padding: 0;">
+            <div class="col-1_5 col-padding" style="height:100%; text-align: center;">
+                <br>
+                <p class="time-of-departure-2"></p>
+            </div>
+            <div class="col-10_5 col-padding" style="height:100%;">
+                <br>
+                <p><span class="city-of-departure"></span> (<span class="airport-of-departure"></span>)</p>
+            </div>
+        </div>
+
+        <div class="row col-12" style="height: 80%; padding: 0;">
+            <div class="col-1_5" style="height: 80%; padding: 0; text-align: center; border-right: 2px solid blue;">
+                <p style="color: gray; margin-top: 7px;">20 May</p>
+                <br>
+                <br>
+                <p><i class='bx bx-right-arrow-alt'></i> <span class="time-of-flight">120 M</span></p>
+                <br>
+                <br>
+                <p class="time-of-arrival-2">11:00 AM</p>
+                <p style="color: gray; margin-top: -1rem;">20 May</p>
+            </div>
+            <div class="col-10_5 col-padding" style="height: 100%; padding-top: 0;">
+                <p style="color: gray; margin-top: 7px;" class="airport-of-departure-name"></p>
+
+                <div class="col-9_5" style="height: 50%; border: 1px solid gray; border-radius: 10px; padding: 0;">
+                    <div class="col-4 col-padding" style="height: 100%;">
+                        <strong class="flight-info-text airline-name-2"></strong>
+                        <p class="flight-info-text"><span class="airline-code-2"></span>-<span class="route-code">127</span> - <span class="seat-class" style="font-style: italic; font-weight: bold;">Economy</span></p>
+                    </div>
+                    <div class="col-4 col-padding" style="height: 100%;">
+                        <p class="flight-info-text" style="color: gray; margin-top: 0;">
+                            <!-- icon -->Baggage 20 kg</p>
+                        <p class="flight-info-text" style="color: gray;">Cabin Baggage 7 kg</p>
+                    </div>
+                    <div class="col-4 col-padding" style="height: 100%;">
+                        <p class="flight-info-text" style="margin-top: 0;"><span style="font-weight: bold;">Aircraft</span> Boeing 737</p>
+                        <p class="flight-info-text"><span style="font-weight: bold;">Seat layout</span> 3-3</p>
+                        <p class="flight-info-text"><span style="font-weight: bold;">Seat pitch</span> 29 inches (standard)</p>
+                    </div>
+                </div>
+
+                <div class="col-2_5" style="height: 50%; "></div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <p style="margin-top: 13px;">
+                    <p><span class="city-of-arrival"></span> (<span class="airport-of-arrival"></span>)</p>
+                </p>
+                <p class="airport-of-arrival-name" style="color: gray; margin-top: -1rem;"></p>
+            </div>
+        </div>
+        <script>
+            fillPlaneInfo(2, planeInfo2);
+        </script>
+    </div>
+    <script>
+        fillFlightInfo();
+    </script>
+
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus a nostrum eos ex minus vero neque, inventore at ipsam? Esse delectus, quibusdam deserunt illo architecto quaerat dolore rem recusandae?</p>
+        <p>G2 Airline is an airline operating in Indonesia since time immemorial, which has not been trusted by the public for its use</p>
     </footer>
+
+</body>
+
 </html>
