@@ -51,7 +51,9 @@
     background-color: white;
 }
 
+
 /* how do I keep the button's opacity to stay at 100% ? */
+
 .body:hover {
     opacity: 70%;
 }
@@ -80,15 +82,24 @@ body {
 footer {
     background-color: #1c1c1b;
     color: #dedede;
-
     margin: auto;
     margin-top: 5rem;
-
     max-width: 100%;
     height: 20rem;
-
     border-radius: 5px 5px 0 0;
 }
+
+footer {
+    position: static;
+    padding: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
 
 /* h1, p, i {
     border: 2px solid black;
