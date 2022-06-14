@@ -48,7 +48,7 @@
 
 #price-1 {
     width: 70rem;
-    height: 30rem;
+    height: 38rem;
     margin: auto;
     margin-top: 0;
 }
@@ -62,7 +62,7 @@
 
 #price-2 {
     width: 70rem;
-    height: 30rem;
+    height: 38rem;
     margin: auto;
     margin-top: 0;
 }
@@ -96,6 +96,14 @@
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
 .text-gray {
     color: lightgray;
 }
@@ -106,6 +114,10 @@
 
 .text-italic {
     font-style: italic;
+}
+
+.text-discount {
+    color: green;
 }
 
 .no-margin {
@@ -120,9 +132,14 @@
     margin-bottom: 0;
 }
 
+.airline-logo {
+    width: 80%;
+    height: 80%;
+}
+
 .result-airline-logo {
-    width: calc(300px / 4.6875);
-    height: calc(141px / 4.6875);
+    width: calc(100% / 4.6875);
+    height: calc(100% / 4.6875);
 }
 
 .result-text-time {
@@ -149,8 +166,8 @@
 }
 
 .info-airline-logo {
-    width: calc(300px / 9.375);
-    height: calc(141px / 9.375);
+    width: calc(100% / 9.375);
+    height: calc(100% / 9.375);
 }
 
 .info-text-seat-class {
@@ -160,6 +177,21 @@
 
 .price-text-title {
     margin-bottom: 1.5rem;
+    font-size: 18.72px;
+}
+
+.price-panel {
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.price-panel-airline-logo {
+    /* width: calc(300px / 16.02564102564103);
+    height: calc(141px / 16.02564102564103); */
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -177,6 +209,11 @@ footer {
     height: 20rem;
 
     border-radius: 5px 5px 0 0;
+}
+
+hr {
+    margin-top: 18.72px;
+    margin-bottom: 18.72px;
 }
 
 br {
