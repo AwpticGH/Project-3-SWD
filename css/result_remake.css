@@ -10,7 +10,7 @@
 }
 
 .searched {
-    background-color: #5584AC;
+    background-color: linear-gradient(100deg, #9932CC, #87CEFA);
     color: white;
     width: 70rem;
     height: 15rem;
@@ -195,7 +195,7 @@
 }
 
 body {
-    background-color: #95D1CC;
+    background: linear-gradient(135deg, #9370DB, #87CEFA);
     margin: auto;
     /* font-family: 'Work Sans', sans-serif; */
 }
