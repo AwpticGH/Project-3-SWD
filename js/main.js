@@ -4,6 +4,7 @@ let resultPanel1 = {
     isClicked: false,
     hrefClicked: false,
     default: true,
+    panel: document.getElementById("result-1").getElementsByClassName("result"),
     extend: document.getElementById("result-1").getElementsByClassName("result-extended")
 }
 let resultPanel2 = {
@@ -12,6 +13,7 @@ let resultPanel2 = {
     isClicked: false,
     hrefClicked: false,
     default: true,
+    panel: document.getElementById("result-2").getElementsByClassName("result"),
     extend: document.getElementById("result-2"). getElementsByClassName("result-extended")
 }
 
@@ -79,22 +81,26 @@ function extendResult1() {
         if (resultPanel1.hrefClicked) {
             resultPanel1.extend[resultPanel1.displayCounter].style.display = "block";
             resultPanel1.extend[resultPanel1.hideCounter].style.display = "none";
+            resultPanel1.panel[0].style.borderRadius = "10px 10px 0 0";
             resultPanel1.hrefClicked = false;
             resultPanel1.isClicked = true;
         }
         else {
             resultPanel1.extend[resultPanel1.displayCounter].style.display = "block";
+            resultPanel1.panel[0].style.borderRadius = "10px 10px 0 0";
         }
     }
     else {
         if (resultPanel1.hrefClicked) {
             resultPanel1.extend[resultPanel1.displayCounter].style.display = "block";
             resultPanel1.extend[resultPanel1.hideCounter].style.display = "none";
+            resultPanel1.panel[0].style.borderRadius = "10px 10px 0 0";
             resultPanel1.hrefClicked = false;
             resultPanel1.isClicked = true;
         }
         else {
             resultPanel1.extend[resultPanel1.displayCounter].style.display = "none";
+            resultPanel1.panel[0].style.borderRadius = "10px 10px 10px 10px";
         }
     }
 }
@@ -104,22 +110,26 @@ function extendResult2() {
         if (resultPanel2.hrefClicked) {
             resultPanel2.extend[resultPanel2.displayCounter].style.display = "block";
             resultPanel2.extend[resultPanel2.hideCounter].style.display = "none";
+            resultPanel2.panel[0].style.borderRadius = "10px 10px 0 0";
             resultPanel2.hrefClicked = false;
             resultPanel2.isClicked = true;
         }
         else {
             resultPanel2.extend[resultPanel2.displayCounter].style.display = "block";
+            resultPanel2.panel[0].style.borderRadius = "10px 10px 0 0";
         }
     }
     else {
         if (resultPanel2.hrefClicked) {
             resultPanel2.extend[resultPanel2.displayCounter].style.display = "block";
             resultPanel2.extend[resultPanel2.hideCounter].style.display = "none";
+            resultPanel2.panel[0].style.borderRadius = "10px 10px 0 0";
             resultPanel2.hrefClicked = false;
             resultPanel2.isClicked = true;
         }
         else {
             resultPanel2.extend[resultPanel2.displayCounter].style.display = "none";
+            resultPanel2.panel[0].style.borderRadius = "10px 10px 10px 10px";
         }
     }
 }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +8,15 @@
 }
 
 body {
-    height: 100vh;
+    background: linear-gradient(135deg, #9370DB, #87CEFA);
+}
+
+.form-body {
+    height: 87vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(135deg, #9370DB, #87CEFA);
 }
 
 .container {
@@ -135,24 +139,9 @@ form .button input {
 }
 
 form .button input:hover {
-    /* transform: scale(0.99); */
+    transform: scale(0.99);
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
-
-
-/*
-.footer {
-    position: static;
-    padding: 10px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: black;
-    text-align: center;
-    margin-top: 3rem;
-}
-*/
 
 @media(max-width: 584px) {
     .container {
