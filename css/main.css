@@ -45,6 +45,10 @@
     width: 16.66%;
 }
 
+.col-2_25 {
+    width: 18.75%;
+}
+
 .col-2_4 {
     width: 20%;
 }
@@ -104,6 +108,47 @@
 .col-12 {
     width: 100%;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-gray {
+    color: lightgray;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-discount {
+    color: green;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
 
 
 /* burger icon */

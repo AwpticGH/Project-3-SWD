@@ -36,8 +36,8 @@
 }
 
 .result:hover {
-    opacity: 70%;
-    border: 5px solid #87CEFA;
+    opacity: 80%;
+    border: 3px solid #87CEFA;
 }
 
 .result-extended {
@@ -96,46 +96,6 @@
 .arrow {
     font-size: 2.5rem;
     margin-left: auto;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-gray {
-    color: lightgray;
-}
-
-.text-bold {
-    font-weight: bold;
-}
-
-.text-italic {
-    font-style: italic;
-}
-
-.text-discount {
-    color: green;
-}
-
-.no-margin {
-    margin: 0;
-}
-
-.no-margin-top {
-    margin-top: 0;
-}
-
-.no-margin-bottom {
-    margin-bottom: 0;
 }
 
 .airline-logo {

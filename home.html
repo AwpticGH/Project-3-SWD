@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>G2 Airline - Airline Ticket Reservation by Group 2 of 2SE1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Group 2 of 2SE1 - Alfiansyah, Rafi Fajar Sulaiman and Wahyu Agung Utomo">
+        <meta name="charset" content="UTF-8">
+        <meta name="description" content="G2 Airline is Dedicated To Reserve Your Flight">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="Images/Icons/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="Images/Icons/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="wrapper">
+            <nav>
+                <div class="container-flex">
+                    <div class="brand">
+                        <a href="home.html">G2 Airline</a>
+                    </div>
+                    <div class="burger">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="bg-sidebar"></div>
+                    <ul class="sidebar">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="Regis.html">Register</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <script src="js/navbar.js"></script>
+        </div>
+
+        <!-- Slideshow -->
+        <div class="slideshow-background">
+            <div class="container slideshow">
+                test
+            </div>
+        </div>
+
+        <!-- Search Box -->
+        <div class="container search-box">
+            <div class="header">
+                <h2 class="text">Hello there!</h2>
+                <h1 class="text">Are you looking to travel somewhere?</h1>
+            </div>
+            <div class="promo-group">
+                <div class="row">
+                    <div class="col-1">
+                        <h1 class="text"><i class='bx bxs-plane-alt' style="color: blue;"></i></h1>
+                    </div>
+                    <div class="col-11">
+                        <h2 class="text">Look for promos & cheap ticket prices <a href="">here</a>!!!</h2>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <label for="trip-choice">
+                        <input type="radio" id="trip-choice"  name="trip-choice" checked> Single-Trip
+                    </label>
+                </div>
+            </div>
+            <div class="search-group">
+                <form action="">
+                    <div class="col-2_5 from-to" id="from">
+                        <label for="from-city" class="text-gray label-form">From</label><br>
+                        <input type="text" id="from-city" name="from-city" placeholder="City or Airport" onclick="displayListsFrom()"><br>
+                        <div class="container-lists">
+                            <input type="text" placeholder="City or Airport" disabled>
+                            <button class="btn-cities">Jakarta, Indonesia</button>
+                            <button class="btn-cities">Surabaya, Indonesia</button>
+                            <button class="btn-cities">Medan, Indonesia</button>
+                            <button class="btn-cities">Makassar, Indonesia</button>
+                            <button class="btn-cities">Yogyakarta, Indonesia</button>
+                            <button class="btn-cities">Denpasar-Bali, Indonesia</button>
+                            <button class="btn-cities">Padang, Indonesia</button>
+                            <button class="btn-cities">Palembang, Indonesia</button>
+                            <button class="btn-cities">Banjarmasin, Indonesia</button>
+                            <button class="btn-cities">Pontianak, Indonesia</button>
+                        </div>
+                        <!-- <datalist id="cities">
+                            <option value="Jakarta">
+                            <option value="Bandung">
+                        </datalist> -->
+                    </div>
+                    <div class="col-2_5 from-to">
+                        <label for="to-city" class="text-gray label-form">To</label><br>
+                        <input type="text" list="cities" name="to-city" id="to-city">
+                        <datalist id="cities">
+                            <option value="Jakarta">
+                            <option value="Bandung">
+                        </datalist>
+                    </div>
+                    <div class="col-2_25 departure-arrival">
+                        <label for="departure-date" class="text-gray label-form">Depart Date</label><br>
+                        <input type="date" name="departure-date" id="departure-date">
+                    </div>
+                    <div class="col-2_25 departure-arrival">
+                        <input type="checkbox" id="return-date-check" name="return-date-check" class="checkbox">
+                        <label for="return-date-check" class="text-gray label-form"> Return Date</label><br>
+                        <input type="date" name="return-date" id="return-date">
+                    </div>
+                    <div class="col-2_5 passenger-class">
+                        <label for="passenger-seat-class" class="text-gray label-form">Passenger, Seat Class</label><br>
+                        <input type="text" placeholder="1 Passenger, Economy">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/home.js"></script>
+    </body>
+</html>

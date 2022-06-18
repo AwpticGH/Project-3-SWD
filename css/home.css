@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* filter: brightness(0.5); */
+}
+
+br {
+    height: 1rem;
+}
+
+.slideshow-background {
+    height: 40vh;
+    background: linear-gradient(135deg, #9370DB, #87CEFA);
+    display: flex;  
+    /* filter: brightness(0.4); */
+}
+
+.main-background {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60rem;
+    margin: auto;
+    /* filter: brightness(0.5); */
+}
+
+.slideshow {
+    /* margin-top: 5rem; */
+    height: 13rem;
+    /* display: inline; */
+}
+
+.search-box {
+    height: 346px;
+    margin-top: -6rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search-box:hover {
+    border: 3px solid #87CEFA;
+}
+
+.search-box .header {
+    background: linear-gradient(135deg, #9370DB, #87CEFA);
+    border-radius: 10px 10px 0 0;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.search-box .promo-group {
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.search-box .promo-group .col-11 .text {
+    margin-top: 4px;
+    margin-left: -2rem;
+}
+
+input {
+    width: 18px;
+    height: 18px;
+    margin: 0 5px;
+}
+
+.search-box .promo-group .row label {
+    font-size: 18px;
+}
+
+.search-box .search-group {
+    border-top: 2px solid lightslategray;
+}
+
+/* .search-box .search-group .from-to {
+    padding: 1rem 1rem 1rem 2rem;
+} */
+
+.text {
+    margin: 0;
+}
+
+form .from-to {
+    padding: 1rem 1rem 1rem 2rem;
+    border-right: 2px solid lightslategray;
+}
+
+form .from-to input {
+    /* display: block; */
+    width: 90%;
+    height: 2rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+form .departure-arrival {
+    padding: 1rem;
+    border-right: 2px solid lightslategray;
+}
+
+form .departure-arrival input {
+    width: 100%;
+    height: 2rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+form .departure-arrival .checkbox {
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+}
+
+form .passenger-class {
+    padding: 1rem;
+}
+
+form .passenger-class input {
+    width: 100%;
+    height: 2rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.label-form {
+    font-size: 14px;
+}
+
+form #from {
+    border-right: 2px solid lightslategray;
+}
+
+input {
+    border: 0;
+}
+
+.container-lists {
+    width: 200%;
+    height: 15rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0rem 1rem;
+    background-color: white;
+    margin-top: 1rem;
+    overflow: scroll;
+    display: none;
+}
+
+form [class*="col-"] .container-lists input {
+    border-bottom: 1px solid lightslategray;
+    margin: auto;
+    background-color: white;
+    width: 100%;
+}
+
+form [class*="col-"] .container-lists button {
+    border: none;
+    border-bottom: 1px solid lightslategray;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+}
+
+form [class*="col-"] .container-lists button:hover {
+    background-color: #87CEFA;
+}
+
+form [class*="col-"] .container-lists button:last-child {
+    border-bottom: none;
+}
