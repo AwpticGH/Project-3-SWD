@@ -10,17 +10,29 @@ function focusOnSearchBox() {
     }
 }
 
-var fromContainer = document.getElementsByClassName("container-lists")[0];
-var toContainer = document.getElementsByClassName("container-lists")[1];
-// var passContainer = document.getElementsByClassName("container-lists")[2];
+var fromContainer = document.getElementById("from-city-list");
+var toContainer = document.getElementById("to-city-list");
+var passContainer = document.getElementById("passenger-list");
 
 function displayListsFrom() {
     fromContainer.style.display = "block";
+    document.getElementsByTagName("*").onclick = function() {
+        if (fromContainer.style.display == "block") {
+            fromContainer.style.display = "none";
+        }
+        if (toContainer.style.display == "block") {
+            toContainer.style.display = "none";
+        }
+        if (passContainer.style.display == "block") {
+            passContainer.style.display = "none";
+        }
+        console.log("blah")
+    }
 }
 function displayListsTo() {
     toContainer.style.display = "block";
 }
-function dislpayListsPass() {
+function displayListsPass() {
     passContainer.style.display = "block";
 }
 
@@ -71,3 +83,110 @@ if (day < 10) {
 }
 var tomorrow = year + "-" + month + "-" + day;
 returnDate.value = tomorrow;
+
+// slideshow
+const image = ["Images/Airline_ads(1).jpg", "Images/Airline_ads(2).jpg", "Images/Airline_ads(3).jpg", "Images/Airline_ads(4).jpg", "Images/Airline_ads(5).jpg"];
+var slideImg = document.getElementsByClassName("slideshow-img");
+var slide1 = 0;
+var slide2 = 1;
+var slide3 = 2;
+
+function slideshowAds() {
+    if (slide3 > (image.length - 1)) {
+        slide3 = 0;
+    }
+    if (slide2 > (image.length - 1)) {
+        slide2 = 0;
+    }
+    if (slide1 > (image.length - 1)) {
+        slide1 = 0;
+    }
+
+    slideImg[0].src = image[slide1];
+    slideImg[1].src = image[slide2];
+    slideImg[2].src = image[slide3];
+    slide1++;
+    slide2++;
+    slide3++;
+    setTimeout(slideshowAds, 3000);
+}
+
+slideshowAds();
+
+// return date checked
+function returnFlight() {
+    if (document.getElementById("return-date-check").checked) {
+        if (returnDate.value != tomorrow) {
+            displayListsPass();
+        }
+    }
+}
+
+var passCount = 1;
+var seatClass = "Economy";
+var textGroup;
+
+btnDecrease = document.getElementById("passenger-count").querySelectorAll(".btn-decrease");
+btnIncrease = document.getElementById("passenger-count").querySelectorAll(".btn-increase");
+
+btnDecrease.forEach(button => {
+    button.addEventListener("click", function() {
+        if (passCount > 1) {
+            passCount--;
+            if (passCount == 1) {
+                textGroup = passCount + " Passenger, " + seatClass;
+            }
+            else {
+                textGroup = passCount + " Passengers, " + seatClass;
+            }
+            document.getElementById("passenger-seat-class").value = textGroup;
+        }
+    })
+})
+btnIncrease.forEach(button => {
+    button.addEventListener("click", function() {
+        if (passCount < 5) {
+            passCount++;
+            textGroup = passCount + " Passengers, " + seatClass;
+        }
+        document.getElementById("passenger-seat-class").value = textGroup;
+    })
+})
+
+btnSeatClass = document.querySelectorAll(".seat-class-list");
+
+btnSeatClass.forEach(button => {
+    button.addEventListener("click", function() {
+        seatClass = button.innerHTML;
+        if (passCount == 1) {
+            textGroup = passCount + " Passenger, " + seatClass;
+        }
+        else {
+            textGroup = passCount + " Passengers, " + seatClass;
+        }
+        document.getElementById("passenger-seat-class").value = textGroup;
+    })
+})
+
+function resetPassSeatClass() {
+    passCount = 1;
+    seatClass = "Economy";
+    document.getElementById("passenger-seat-class").value = "1 Passenger, Economy";
+}
+
+function submitPassSeatClass() {
+    passContainer.style.display = "none";
+}
+
+// Konsul 1
+function hideContainers() {
+    if (fromContainer.style.display == "block") {
+        fromContainer.style.display = "none";
+    }
+    if (toContainer.style.display == "block") {
+        toContainer.style.display = "none";
+    }
+    if (passContainer.style.display == "block") {
+        passContainer.style.display = "none";
+    }
+}

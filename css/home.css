@@ -28,14 +28,18 @@ br {
 }
 
 .slideshow {
-    /* margin-top: 5rem; */
     height: 13rem;
-    /* display: inline; */
+}
+
+.slideshow-img {
+    width: 33%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 .search-box {
-    height: 346px;
-    margin-top: -6rem;
+    margin-top: -2rem;
     border-radius: 10px;
     box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -71,11 +75,27 @@ input {
 
 .search-box .search-group {
     border-top: 2px solid lightslategray;
+    border-bottom: 2px solid lightslategray;
+    height: 99px;
 }
 
-/* .search-box .search-group .from-to {
-    padding: 1rem 1rem 1rem 2rem;
-} */
+.search-box .footer {
+    height: 80px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-submit {
+    background-color: #87CEFA;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 20px;
+}
+
+.btn-submit a {
+    text-decoration: none;
+    color: black;
+}
 
 .text {
     margin: 0;
@@ -135,8 +155,9 @@ input {
     border: 0;
 }
 
+/* Passenger, Seat Class Panels */
 .container-lists {
-    width: 200%;
+    width: 20rem;
     height: 15rem;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -145,16 +166,18 @@ input {
     margin-top: 1rem;
     overflow: scroll;
     display: none;
+    position: absolute;
+    z-index: 10;
 }
 
-form [class*="col-"] .container-lists input {
+.container-lists input {
     border-bottom: 1px solid lightslategray;
     margin: auto;
     background-color: white;
     width: 100%;
 }
 
-form [class*="col-"] .container-lists button {
+.container-lists button {
     border: none;
     border-bottom: 1px solid lightslategray;
     margin: auto;
@@ -165,10 +188,46 @@ form [class*="col-"] .container-lists button {
     text-align: left;
 }
 
-form [class*="col-"] .container-lists button:hover {
+.container-lists button:hover {
     background-color: #87CEFA;
 }
 
-form [class*="col-"] .container-lists button:last-child {
+.container-lists button:last-child {
     border-bottom: none;
+}
+
+#passenger-list {
+    margin-left: -9rem;
+}
+
+#passenger-list .btn-increase, #passenger-list .btn-decrease {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 2px solid black;
+    display: inline;
+}
+
+#passenger-list button, #passenger-list p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#seat-class {
+    height: 100%;
+    border-left: 1px solid black;
+}
+
+#passenger-list #passenger-count, #passenger-list #seat-class {
+    padding: 0 10px;
+}
+
+#seat-class button {
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#seat-class button:first-child {
+    margin-top: 16px;
 }
