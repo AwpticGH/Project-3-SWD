@@ -1,10 +1,38 @@
-const searchContainer = document.getElementsByClassName("search-box");
-const homePage = document.querySelectorAll("*");
+const searchBox = document.getElementById("search-box");
+const allElement = document.getElementsByTagName("*");
+var unfocused = new Array();
+unfocused.push(document.querySelector(".wrapper"));
+unfocused.push(document.querySelector(".slideshow-background"));
+unfocused.push(document.querySelector(".main-background"));
+unfocused.push(document.querySelector("footer"));
 
-function focusOnSearchBox() {
-   
-    if (document.activeElement == searchContainer) {
-        console.log("true");
+searchBox.addEventListener("click", function() {
+    if (unfocused.includes(document.querySelector("#search-box"))) {
+        unfocused.splice(4, 1);
+    }
+
+    if (!searchBox.classList.contains("active")) {
+        if (navLogin.classList.contains("active")) {
+            navLogin.classList.remove("active");
+        }
+        searchBox.classList.add("active");
+        focusOnClicked();
+    }
+    else {
+        focusOnClicked();
+        searchBox.classList.remove("active");
+    }
+});
+
+function focusOnClicked() {
+    for (var i = 0; i < unfocused.length; i++) {
+        if (unfocused[i].style.filter == "brightness(0.5)") {
+            unfocused[i].style.filter = "brightness(1)"
+            // hideContainers();
+        }
+        else {
+            unfocused[i].style.filter = "brightness(0.5)";
+        }
     }
 }
 

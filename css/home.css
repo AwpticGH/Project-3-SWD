@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    /* filter: brightness(0.5); */
 }
 
 br {
@@ -13,13 +12,20 @@ br {
     height: 40vh;
     background: linear-gradient(135deg, #9370DB, #87CEFA);
     display: flex;  
-    /* filter: brightness(0.4); */
+    /* filter: brightness(0.5); */
+}
+
+.main-background {
+    content: "";
+    background-color: #f0f0f0;
+    height: 50vh;
+    margin-top: calc(-424px + 1.9rem);
+    /* filter: brightness(0.5); */
 }
 
 .container {
     width: 60rem;
     margin: auto;
-    /* filter: brightness(0.5); */
 }
 
 .slideshow {
@@ -37,15 +43,8 @@ br {
     margin-top: -2rem;
     border-radius: 10px;
     box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.search-box:hover {
-    border: 3px solid #87CEFA;
-    cursor: pointer;
-}
-
-.search-box:focus {
-    opacity: initial;
+    position: relative;
+    z-index: 20;
 }
 
 .search-box .header {
@@ -55,6 +54,7 @@ br {
 }
 
 .search-box .promo-group {
+    background-color: #f0f0f0;
     padding: 1rem 1rem 1rem 2rem;
 }
 
@@ -75,15 +75,22 @@ input {
 }
 
 .search-box .search-group {
-    border-top: 2px solid lightslategray;
-    border-bottom: 2px solid lightslategray;
+    border-top: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
     height: 99px;
+    background-color: #f0f0f0;
 }
 
 .search-box .footer {
     height: 80px;
     padding: 1rem;
     text-align: center;
+    background-color: #f0f0f0;
+}
+
+.search-box .footer a {
+    text-decoration: none;
+    color: black;
 }
 
 .btn-submit {
@@ -91,11 +98,15 @@ input {
     width: 9rem;
     height: 3rem;
     border-radius: 20px;
+    border: 1px solid lightslategray;
 }
 
-.btn-submit a {
-    text-decoration: none;
-    color: black;
+.btn-submit:disabled:hover {
+    cursor: not-allowed;
+}
+
+.btn-submit:enabled:hover {
+    cursor: pointer;
 }
 
 .text {
@@ -104,7 +115,7 @@ input {
 
 form .from-to {
     padding: 1rem 1rem 1rem 2rem;
-    border-right: 2px solid lightslategray;
+    border-right: 1px solid lightslategray;
 }
 
 form .from-to input {
@@ -117,7 +128,7 @@ form .from-to input {
 
 form .departure-arrival {
     padding: 1rem;
-    border-right: 2px solid lightslategray;
+    border-right: 1px solid lightslategray;
 }
 
 form .departure-arrival input {
@@ -125,6 +136,14 @@ form .departure-arrival input {
     height: 2rem;
     margin: 0;
     margin-top: 0.5rem;
+}
+
+form .departure-arrival input:hover {
+    cursor: pointer;
+}
+
+form .departure-arrival input:disabled:hover {
+    cursor: not-allowed;
 }
 
 form .departure-arrival .checkbox {
@@ -144,12 +163,16 @@ form .passenger-class input {
     margin-top: 0.5rem;
 }
 
+form .passenger-class input:hover {
+    cursor: pointer;
+}
+
 .label-form {
     font-size: 14px;
 }
 
-form #from {
-    border-right: 2px solid lightslategray;
+.label-form:hover {
+    cursor: pointer;
 }
 
 input {
