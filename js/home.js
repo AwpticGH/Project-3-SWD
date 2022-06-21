@@ -1,12 +1,10 @@
 const searchContainer = document.getElementsByClassName("search-box");
-const homePage = document.getElementsByTagName("body");
+const homePage = document.querySelectorAll("*");
 
 function focusOnSearchBox() {
-    for (var i = 0; i < homePage.length; i++) {
-        homePage[i].style.filter = "brightness(0.5)";
-    }
-    for (var i = 0; i < searchContainer.length; i++) {
-        searchContainer[i].style.filter = "brightness(1)";
+   
+    if (document.activeElement == searchContainer) {
+        console.log("true");
     }
 }
 
@@ -116,9 +114,13 @@ slideshowAds();
 // return date checked
 function returnFlight() {
     if (document.getElementById("return-date-check").checked) {
+        returnDate.disabled = false;
         if (returnDate.value != tomorrow) {
             displayListsPass();
         }
+    }
+    else {
+        returnDate.disabled = true;
     }
 }
 

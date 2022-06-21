@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
     /* filter: brightness(0.5); */
 }
 
@@ -13,12 +14,6 @@ br {
     background: linear-gradient(135deg, #9370DB, #87CEFA);
     display: flex;  
     /* filter: brightness(0.4); */
-}
-
-.main-background {
-    background: white;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -46,6 +41,11 @@ br {
 
 .search-box:hover {
     border: 3px solid #87CEFA;
+    cursor: pointer;
+}
+
+.search-box:focus {
+    opacity: initial;
 }
 
 .search-box .header {
@@ -67,6 +67,7 @@ input {
     width: 18px;
     height: 18px;
     margin: 0 5px;
+    background-color: #f0f0f0;
 }
 
 .search-box .promo-group .row label {
