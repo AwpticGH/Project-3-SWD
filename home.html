@@ -14,6 +14,7 @@
     <link rel="icon" href="Images/Icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -34,28 +35,28 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#blog">Blog</a></li>
-                    <li>
-                        <a href="#wrapper" id="nav-login">Login</a>
-                        <div id="login-panel">
-                            <form action="" class="login-form">
-                                <label for="email">Email</label><br>
-                                <input type="email" name="email" id="email" placeholder="example@gmail.com">
-                                <label for="password">Password</label><br>
-                                <input type="password" name="password" id="password" placeholder="Password"><br>
-                                <div class="btn-group">
-                                    <div class="col-4">
-                                        <button type="submit">Login</button>
+                    <li class="clr4 dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Login<span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="padding: 20px 10px 5px 10px; width:300px;">
+                            <li>
+                                <form>
+                                    <div class="form-group">
+
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                                     </div>
-                                    <div class="col-4">
-                                        <p>Don't have an account?</p>    
+                                    <div class="form-group">
+
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                                     </div>
-                                    <div class="col-4 text-right">
-                                        <a href="Regis.html"><button>Register</button></a>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"> Remember me</label>
                                     </div>
-                                </div>
-                            </form>
-                        </div>
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </form>
+                            </li>
+                        </ul>
                     </li>
+                    <li><a href="Regis.html">Register</a></li>
                 </ul>
             </div>
         </nav>
@@ -201,6 +202,10 @@
 
     <!-- Main Background -->
     <div class="main-background"></div>
+    <script src="js/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 <footer class="footer-distributed" id="blog">
@@ -247,6 +252,5 @@
         </div>
     </div>
 </footer>
-<script src="js/home.js"></script>
 
 </html>
