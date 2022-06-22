@@ -258,16 +258,17 @@ nav ul li a {
 
 /* panel login */
 #login-panel {
-    width: 17rem;
+    /* width: 17rem; */
+    width: 330.28px;
     height: fit-content;
     border-radius: 0 0 10px 10px;
     position: absolute;
-    z-index: 10;
-    background-color: white;
-    margin-top: 23px;
-    margin-left: calc(-17rem + 77.78px - 15px);
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 20;
+    background: linear-gradient(135deg, #9370DB, #87CEFA);
+    margin-top: 20px;
+    margin-left: calc(-330.28px + 77.78px - 15px);
     display: none;
-    /* border: 1px solid black; */
 }
 
 .login-form {
@@ -275,14 +276,14 @@ nav ul li a {
 }
 
 .login-form input {
-    width: 100%;
+    width: 75%;
     height: 22px;
     margin: 0;
 }
 
 .login-form .btn-group {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .login-form .btn-group button {
@@ -291,10 +292,6 @@ nav ul li a {
 
 .login-form .btn-group p {
     font-size: 10px;
-}
-
-.login-form .btn-group:last-child {
-    float: right;
 }
 
 @media screen and (min-width: 960px) {

@@ -14,31 +14,14 @@ bgSidebar.addEventListener('click', function() {
     burger.classList.remove('change')
 })
 
-// Konsul
-const loginPanel = document.getElementById("login-panel");
 const navLogin = document.getElementById("nav-login");
+const loginPanel = document.getElementById("login-panel");
 
-navLogin.addEventListener("click", function() {
-    if (!unfocused.includes(document.querySelector("#search-box"))) {
-        for (var i = 0; i < unfocused.length; i++) {
-            if (unfocused[i].style.filter == "brightness(0.5)") {
-                unfocused[i].style.filter = "brightness(1)";
-            }
-        }
-        unfocused.push(document.querySelector("#search-box"));
-    }
-
+function extendLogin() {
     if (loginPanel.style.display == "block") {
-        focusOnClicked();
         loginPanel.style.display = "none";
-        loginPanel.classList.remove("active");
     }
     else {
-        if (searchBox.classList.contains("active")) {
-            searchBox.classList.remove("active");
-        }
         loginPanel.style.display = "block";
-        loginPanel.classList.add("active");
-        focusOnClicked();
     }
-})
+}
