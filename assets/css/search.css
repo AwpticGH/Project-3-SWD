@@ -18,13 +18,12 @@
     margin-top: 7rem;
 }
 
-.searched:hover {
-    opacity: 90%;
-    border: 3px solid #87CEFA;
-}
-
 .searched-text {
     padding: 15px;
+}
+
+.searched-footer {
+    margin-top: 1rem;
 }
 
 .result {

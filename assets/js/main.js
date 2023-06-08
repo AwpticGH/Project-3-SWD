@@ -1,139 +1,73 @@
-let resultPanel1 = {
-    displayCounter: 0,
-    hideCounter: 1,
-    isClicked: false,
-    hrefClicked: false,
-    default: true,
-    panel: document.getElementById("result-1").getElementsByClassName("result"),
-    extend: document.getElementById("result-1").getElementsByClassName("result-extended")
-}
-let resultPanel2 = {
-    displayCounter: 0,
-    hideCounter: 1,
-    isClicked: false,
-    hrefClicked: false,
-    default: true,
-    panel: document.getElementById("result-2").getElementsByClassName("result"),
-    extend: document.getElementById("result-2"). getElementsByClassName("result-extended")
+const burger = document.querySelector('.burger');
+const sidebar = document.querySelector('.sidebar');
+const bgSidebar = document.querySelector('.bg-sidebar');
+
+burger.addEventListener('click', function() {
+    this.classList.toggle('change');
+    sidebar.classList.toggle('change');
+    bgSidebar.classList.toggle('change');
+});
+
+bgSidebar.addEventListener('click', function() {
+    this.classList.remove('change');
+    sidebar.classList.remove('change');
+    burger.classList.remove('change');
+});
+
+// not logged-in
+const navLogin = document.getElementById("trigger-login");
+const loginPanel = document.getElementById("login-panel");
+// logged-in
+const navUser = document.getElementById("trigger-user");
+const userPanel = document.getElementById("user-panel");
+
+let focusedElement = null;
+
+const focusElement = (element) => {
+    if (focusedElement) focusedElement.classList.remove('focussed');
+    focusedElement = element;
+    focusedElement.classList.add('focussed');
 }
 
-function displayInfo1() {
-    resultPanel1.displayCounter = 0;
-    resultPanel1.hideCounter = 1;
-    resultPanel1.hrefClicked = true;
+const unfocusElement = () => {
+    if (!focusedElement) return;
+    focusedElement.classList.remove('focussed');
+    focusedElement = null;
+    hideContainers();
 }
 
-function displayPrice1() {
-    resultPanel1.displayCounter = 1;
-    resultPanel1.hideCounter = 0;
-    resultPanel1.hrefClicked = true;
-}
-
-function displayInfo2() {
-    resultPanel2.displayCounter = 0;
-    resultPanel2.hideCounter = 1;
-    resultPanel2.hrefClicked = true;
-}
-
-function displayPrice2() {
-    resultPanel2.displayCounter = 1;
-    resultPanel2.hideCounter = 0;
-    resultPanel2.hrefClicked = true;
-}
-
-function clickedResult1() {
-    if (resultPanel1.default) {
-        resultPanel1.displayCounter = 0;
-    }
-    resultPanel1.default = false;
-    
-    if (!resultPanel1.isClicked) {
-        resultPanel1.isClicked = true;
-    }
-    else {
-        resultPanel1.isClicked = false;
-    }
-}
-
-function clickedResult2() {
-    if (resultPanel2.default) {
-        resultPanel2.displayCounter = 0;
-    }
-    resultPanel2.default = false;
-    
-    if (!resultPanel2.isClicked) {
-        resultPanel2.isClicked = true;
-    }
-    else {
-        resultPanel2.isClicked = false;
-    }
-}
-
-function hidePanel() {
-    for (var i = 0; i < resultPanel1.extend.length; i++) {
-        resultPanel1.extend[i].style.display = "none";
-        resultPanel2.extend[i].style.display = "none";
-    }
-}
-
-function extendResult1() {
-    if (resultPanel1.isClicked) {
-        if (resultPanel1.hrefClicked) {
-            resultPanel1.extend[resultPanel1.displayCounter].style.display = "block";
-            resultPanel1.extend[resultPanel1.hideCounter].style.display = "none";
-            resultPanel1.panel[0].style.borderRadius = "10px 10px 0 0";
-            resultPanel1.hrefClicked = false;
-            resultPanel1.isClicked = true;
+document.addEventListener("click", (evt) => {
+    if (!focusedElement) return;
+    let targetEl = evt.target; // clicked element
+    do {
+        if(targetEl === focusedElement) {
+            return;
         }
-        else {
-            resultPanel1.extend[resultPanel1.displayCounter].style.display = "block";
-            resultPanel1.panel[0].style.borderRadius = "10px 10px 0 0";
-        }
-    }
-    else {
-        if (resultPanel1.hrefClicked) {
-            resultPanel1.extend[resultPanel1.displayCounter].style.display = "block";
-            resultPanel1.extend[resultPanel1.hideCounter].style.display = "none";
-            resultPanel1.panel[0].style.borderRadius = "10px 10px 0 0";
-            resultPanel1.hrefClicked = false;
-            resultPanel1.isClicked = true;
-        }
-        else {
-            resultPanel1.extend[resultPanel1.displayCounter].style.display = "none";
-            resultPanel1.panel[0].style.borderRadius = "10px 10px 10px 10px";
-        }
-    }
-}
+        // Go up the DOM
+        targetEl = targetEl.parentNode;
+    } while (targetEl);
+    // This is a click outside.
+    unfocusElement();
+});
 
-function extendResult2() {
-    if (resultPanel2.isClicked) {
-        if (resultPanel2.hrefClicked) {
-            resultPanel2.extend[resultPanel2.displayCounter].style.display = "block";
-            resultPanel2.extend[resultPanel2.hideCounter].style.display = "none";
-            resultPanel2.panel[0].style.borderRadius = "10px 10px 0 0";
-            resultPanel2.hrefClicked = false;
-            resultPanel2.isClicked = true;
-        }
-        else {
-            resultPanel2.extend[resultPanel2.displayCounter].style.display = "block";
-            resultPanel2.panel[0].style.borderRadius = "10px 10px 0 0";
-        }
-    }
-    else {
-        if (resultPanel2.hrefClicked) {
-            resultPanel2.extend[resultPanel2.displayCounter].style.display = "block";
-            resultPanel2.extend[resultPanel2.hideCounter].style.display = "none";
-            resultPanel2.panel[0].style.borderRadius = "10px 10px 0 0";
-            resultPanel2.hrefClicked = false;
-            resultPanel2.isClicked = true;
-        }
-        else {
-            resultPanel2.extend[resultPanel2.displayCounter].style.display = "none";
-            resultPanel2.panel[0].style.borderRadius = "10px 10px 10px 10px";
-        }
-    }
-}
+document.querySelectorAll('.focusable').forEach(value => {
+    value.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        focusElement(value);
+    });
+});
 
-console.log(resultPanel1.displayCounter);
+document.getElementById('trigger-user').addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    focusElement(userPanel);
+});
 
-hidePanel();
+// const status = document.getElementById("status").value;
+// if (status === "true") {
+// }
+// else {
+//     document.getElementById('trigger-login').addEventListener('click', (ev) => {
+//         ev.stopPropagation();
+//         focusElement(loginPanel);
+//     });
+// }

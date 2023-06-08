@@ -63,7 +63,7 @@ form .input-box span.details {
     margin-bottom: 5px;
 }
 
-.user-details .input-box input {
+.user-details .input-box input, .form-select {
     height: 45px;
     width: 100%;
     outline: none;
@@ -124,7 +124,7 @@ form .button {
     margin: 35px 0
 }
 
-form .button input {
+form .button button {
     height: 100%;
     width: 100%;
     border-radius: 5px;

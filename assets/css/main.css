@@ -8,7 +8,7 @@
 
 [class*="col-"] {
     float: left;
-    /* border: 1px solid red; */
+    /*border: 1px solid red;*/
 }
 
 .col-padding {
@@ -150,6 +150,10 @@
     margin-bottom: 0;
 }
 
+.focussed {
+    box-shadow: 0 0 0 max(100vh, 100vw) rgba(0, 0, 0, .8) !important;
+}
+
 
 
 /* burger icon */
@@ -271,6 +275,10 @@ nav ul li a {
     display: none;
 }
 
+#login-panel.focussed {
+    display: block;
+}
+
 .login-form {
     padding: 1rem;
 }
@@ -286,12 +294,34 @@ nav ul li a {
     margin-bottom: 40px;
 }
 
-.login-form .btn-group button {
+.login-form .btn-group button{
     height: initial;
+}
+
+.login-form .btn-group a {
+    font-size: 13.3333px;
 }
 
 .login-form .btn-group p {
     font-size: 10px;
+}
+
+/* panel-user */
+#user-panel {
+    width: 330.28px;
+    height: fit-content;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 20;
+    background: linear-gradient(135deg, #9370DB, #87CEFA);
+    margin-top: 20px;
+    margin-left: calc(-330.28px + 77.78px - 15px);
+    display: none;
+}
+
+#user-panel.focussed {
+    display: block;
 }
 
 @media screen and (min-width: 960px) {
@@ -327,6 +357,7 @@ nav ul li a {
         transition: .3s;
         background-color: black;
         transform: translateY(20px);
+        margin-top: -3px;
     }
     nav ul li a {
         color: black;
@@ -470,7 +501,7 @@ footer {
 .footer-distributed .footer-center p a {
     color: black;
     text-decoration: none;
-    ;
+;
 }
 
 
